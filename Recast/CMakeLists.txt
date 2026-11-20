@@ -30,6 +30,7 @@ target_sources(Recast PRIVATE
     Source/RecastLayers.cpp
     Source/RecastMesh.cpp
     Source/RecastMeshDetail.cpp
+    Source/RecastPolyMeshBuilder.cpp
     Source/RecastRasterization.cpp
     Source/RecastRegion.cpp
 )

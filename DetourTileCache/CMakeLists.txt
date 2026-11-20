@@ -22,7 +22,8 @@ target_sources(DetourTileCache PRIVATE
     Source/DetourTileCacheBuilder.cpp
 )
 
-target_link_libraries(DetourTileCache Detour)
+# DetourTileCache uses the shared polygonization pass from Recast.
+target_link_libraries(DetourTileCache Detour Recast)
 
 install(TARGETS DetourTileCache
     EXPORT recastnavigation-targets

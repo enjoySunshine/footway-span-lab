@@ -22,6 +22,7 @@ target_sources(Tests PRIVATE
 	Recast/Tests_Alloc.cpp
 	Recast/Tests_Recast.cpp
 	Recast/Tests_RecastFilter.cpp
+	Recast/Tests_RecastPolyMeshBuilder.cpp
 	Recast/Tests_RecastRasterization.cpp
 )
 
