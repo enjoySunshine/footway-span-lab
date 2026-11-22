@@ -34,6 +34,8 @@ target_sources(Recast PRIVATE
     Source/RecastRegion.cpp
 )
 
+target_link_libraries(Recast PRIVATE RecastNavigation::MeshCore)
+
 install(TARGETS Recast
     EXPORT recastnavigation-targets
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}

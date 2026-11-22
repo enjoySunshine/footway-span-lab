@@ -22,7 +22,10 @@ target_sources(DetourTileCache PRIVATE
     Source/DetourTileCacheBuilder.cpp
 )
 
-target_link_libraries(DetourTileCache Detour)
+target_link_libraries(DetourTileCache
+    PRIVATE Detour
+    PRIVATE RecastNavigation::MeshCore
+)
 
 install(TARGETS DetourTileCache
     EXPORT recastnavigation-targets
